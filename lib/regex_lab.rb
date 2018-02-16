@@ -6,7 +6,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   array = text.scan("#{/\Aun/}")
-  array.grep("#{/ing\z/}")
+  final_array = array.grep("#{/ing\z/}")
 end
 binding.pry
 def words_five_letters_long(text)
