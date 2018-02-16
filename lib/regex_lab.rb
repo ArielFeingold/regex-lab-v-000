@@ -5,8 +5,14 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  un_array = text.scan(/\Aun/)
-  uning_array = un_array.grep("#{/ing\z/}")
+  return_array = []
+  if un_array = text.scan(/\Aun/) && text.scan(/ing\z/)
+    return_array <<
+  end
+  return_array
+  # 
+  # un_array = text.scan(/\Aun/)
+  # uning_array = un_array.grep("#{/ing\z/}")
 end
 
 def words_five_letters_long(text)
